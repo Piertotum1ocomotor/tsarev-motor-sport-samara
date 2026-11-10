@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f5f0">
+  <meta name="robots" content="noindex,follow">
+  <meta name="description" content="Выберите услугу и филиал ЦАРЁВ motor sport в Самаре для записи.">
+  <title>Запись в сервис — ЦАРЁВ motor sport</title>
+  <link rel="icon" href="../assets/logo.png">
+  <link rel="stylesheet" href="../style.css">
+  <script src="../request.js" defer></script>
+</head>
+<body>
+<svg class="symbols" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h15m-6-6 6 6-6 6"/></symbol>
+    <symbol id="i-out" viewBox="0 0 24 24"><path d="M6 18 18 6M7 6h11v11"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 11-8 11S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M7 3 4 4c-3 3 1 10 4 13s9 6 12 3l1-3-5-3-2 2c-3-1-5-3-6-6l2-2-3-5Z"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4 10-10"/></symbol>
+  </svg>
+<a class="skip" href="#main">К содержанию</a>
+<header class="site-header" id="top"><div class="wrap header-inner">
+    <a class="brand" href="../" aria-label="ЦАРЁВ motor sport, главная"><img src="../assets/logo.png" alt="" width="49" height="49"><span>ЦАРЁВ<small>MOTOR SPORT</small></span></a>
+    <nav aria-label="Основная навигация"><a href="../uslugi/">Услуги</a><a href="../masterskaya/">Мастерская</a><a href="../kontakty/">Контакты</a><a href="../zayavka/" aria-current="page">Заявка</a></nav>
+    <div class="header-call"><a href="tel:+79272616363"><svg aria-hidden="true"><use href="#i-phone"/></svg><span>+7 927 261-63-63</span></a><small>Пн–Пт, 09:00–19:00</small></div>
+  </div></header>
+<main id="main">
+<section class="wrap page-shell">
+  <div class="page-intro"><nav class="crumbs" aria-label="Хлебные крошки"><a href="../">Главная</a><span aria-hidden="true">/</span><span aria-current="page">Запись в сервис</span></nav>
+    <p class="eyebrow">ДИАГНОСТИКА · ТО · РЕМОНТ</p>
+    <h1>Запись в сервис<span>.</span></h1>
+    <p class="hero-intro">Выберите филиал и работу. Если не знаете, что нужно, оставьте вариант «Нужна консультация».</p>
+    
+  </div>
+  <div class="request-layout">
+    <form id="request-form" class="request-form" aria-describedby="request-mode">
+      <p id="request-mode" class="request-mode">Демонстрационная форма. Для записи позвоните мастеру выбранного филиала.</p>
+      <div class="form-grid">
+        <label>Услуга<select id="request-service"><option value="">Нужна консультация</option><option value="tekhnicheskoe-obsluzhivanie">Техническое обслуживание</option><option value="zamena-masla-dvigatelya">Замена масла в двигателе</option><option value="zamena-masla-akpp">Замена масла в АКПП</option><option value="diagnostika-dvigatelya">Диагностика двигателя</option><option value="obsluzhivanie-konditsionera">Обслуживание кондиционера и отопления</option><option value="promyvka-radiatorov">Промывка радиаторов</option><option value="remont-podveski">Ремонт подвески</option><option value="zamena-tormoznykh-kolodok">Замена тормозных колодок</option></select></label>
+        <label>Филиал<select id="request-branch" required>
+          <option value="">Выберите филиал</option>
+          <option value="tel:+79272616363">Стара-Загора, 168Б</option>
+          <option value="tel:+79270114411">Ташкентский переулок, 68</option>
+        </select></label>
+      </div>
+      <label>Ваш телефон <input id="request-phone" type="tel" autocomplete="tel" placeholder="+7 900 000-00-00" maxlength="24" required aria-describedby="phone-hint"></label>
+      <p class="field-hint" id="phone-hint">Можно указать номер с +7, 8 или без кода страны.</p>
+      <label>Автомобиль и задача <span>необязательно</span><textarea id="request-message" rows="3" maxlength="600" placeholder="Марка, модель и что нужно сделать"></textarea></label>
+      <button type="submit" class="button primary" disabled>Подготовить заявку <svg aria-hidden="true"><use href="#i-arrow"/></svg></button>
+      <noscript><p>Форма доступна с JavaScript. <a class="text-link" href="../kontakty/">Открыть контакты</a></p></noscript>
+      <div class="request-result" id="request-result" hidden tabindex="-1">
+        <h2>Подтвердите запись по телефону</h2><p id="request-summary"></p>
+        <a id="request-call" class="button primary" href="tel:+79272616363">Позвонить мастеру <svg aria-hidden="true"><use href="#i-phone"/></svg></a>
+      </div>
+    </form>
+    <aside class="detail-aside request-aside">
+      <h2>Позвонить напрямую</h2><p>Мастера отвечают по будням с 09:00 до 19:00.</p>
+      <div><span>Стара-Загора, 168Б</span><a class="text-link" href="tel:+79272616363">+7 927 261-63-63</a></div>
+      <div><span>Ташкентский переулок, 68</span><a class="text-link" href="tel:+79270114411">+7 927 011-44-11</a></div>
+      <a class="text-link" href="../kontakty/">На карте и телефоны запчастей</a>
+    </aside>
+  </div>
+</section>
+</main>
+<footer><div class="wrap footer-inner"><a class="brand" href="../" aria-label="ЦАРЁВ motor sport, главная"><img src="../assets/logo.png" alt="" width="49" height="49"><span>ЦАРЁВ<small>MOTOR SPORT</small></span></a><p>Автосервис в Самаре</p><a class="top-link" href="#top">Наверх <svg aria-hidden="true"><use href="#i-out"/></svg></a></div></footer>
+  <nav class="mobile-bar" aria-label="Быстрые действия">
+    <a class="button outline" href="../uslugi/">Все услуги</a>
+    <a class="button primary" href="../zayavka/">Запись в сервис <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+  </nav>
+</body>
+</html>
